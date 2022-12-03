@@ -15,7 +15,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('email:auto-send')->cron('1 0 * * 2');
+        $schedule->command('send:mails')->cron('1 0 * * 2');
     }
 
     /**
